@@ -3,7 +3,7 @@ import json
 import boto3
 
 def handler(event, context):
-    print("yoo work pls")
+    print("yoo work pls commooon")
     client = boto3.client('comprehend')
     body = event["body"]
     sentiment = client.detect_sentiment(LanguageCode = "en", Text = body)
